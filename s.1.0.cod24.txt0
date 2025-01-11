@@ -62,31 +62,31 @@ MuteAudioWhileOutOfFocus@0;57752;48403 = false
 TelescopeVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Using push to talk to activate microphone.
-VoicePushToTalk@0;57752;20945 = true
+VoicePushToTalk@0;57752;20945 = false
 
 // Adjusts the volume for character dialogues and announcer voices
 VoiceVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Adjusts overall volume of the game
-Volume@0;14317;21371 = 0.100000 // 0.000000 to 1.000000
+Volume@0;14317;21371 = 0.700000 // 0.000000 to 1.000000
 
 // War Tracks Volume
 WarTracksVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Microphone device requested by the user
-SoundInputDevice@0;2059;35888 = 
+SoundInputDevice@0;2059;35888 = {0.0.1.00000000}.{fd9cf76a-39b8-4969-a0bd-c6c1644bfe16}
 
 // Speaker device requested by the user
-SoundOutputDevice@0;2059;35888 = {0.0.0.00000000}.{f35b8a08-602f-4c79-af5d-cba13a63fd8f}
+SoundOutputDevice@0;2059;35888 = {0.0.0.00000000}.{BC46A4FD-F2D8-4E74-85F7-0C70BF3313A2}
 
 // Voice device requested by the user
-VoiceOutputDevice@0;2059;35888 = 
+VoiceOutputDevice@0;2059;35888 = {0.0.0.00000000}.{9D5182CE-3A86-4633-8BF0-2E4141CA5203}
 
 // whether to allow MS's 3D spatializer 'Windows Sonic' mode or (false) present a standard 7.1 mix
 WindowsSonicEnable@0;57752;48403 = false
 
 // Sets whether Embody Immerse spatial headphone tech is enabled
-ImmerseSpatialAudio@0;57752;48403 = false
+ImmerseSpatialAudio@0;57752;48403 = true
 
 
 //
@@ -138,7 +138,7 @@ WindowX@0;8975;53132 = -32768 // -32768 to 32767
 WindowY@0;8975;53132 = -32768 // -32768 to 32767
 
 // Percentage of window resolution that the 3D scene renders at. value set by the user. can be smaller than the actual.
-ResolutionMultiplier@0;64786;30730 = 70 // 0 to 200
+ResolutionMultiplier@0;64786;30730 = 85 // 0 to 200
 
 // Enable Nvidia low latency mode. Boost mode request maximum GPU clock frequency regardless of workload
 NvidiaReflex@0;33761;11445 = Enabled // one of Disabled, Enabled, Enabled + boost
@@ -206,7 +206,7 @@ ShowBrass@0;57752;20945 = true
 // Graphics
 
 // User preferred anti-aliasing technique
-AATechniquePreferred@0;64219;48403 = FSR AA // one of SMAA, XeSS, FSR AA
+AATechniquePreferred@0;64219;48403 = SMAA // one of SMAA, XeSS, FSR AA
 
 // Absolute target resolution
 AbsoluteTargetResolution@0;64285;26972 = none // one of 540P, 640P, 720P, 900P, 1080P, 1440P, native, none
@@ -227,7 +227,7 @@ ReflectionProbeRelighting@0;42543;9045 = 1 // 1 to 4
 ScreenSpaceShadowQuality@0;42742;43096 = Off // one of Off, Low, High
 
 // Screen-space reflection quality level
-SSRQuality@0;58437;11445 = High // one of Off, Low, High
+SSRQuality@0;58437;11445 = Off // one of Off, Low, High
 
 // Static sunshadow moment clipmap resolution
 StaticSunshadowClipmapResolution@0;21851;46253 = 1024 // 0 to 2147483647
@@ -242,25 +242,25 @@ Tessellation@0;27349;11445 = 2_All // one of 0_Off, 1_Near, 2_All
 TextureFilter@0;63279;8284 = aniso 8x // one of aniso 2x, aniso 4x, aniso 8x, aniso 16x
 
 // Texture quality level, high to low ( higher number means lower resolution )
-TextureQuality@0;61129;7764 = 1 // 0 to 3
+TextureQuality@0;61129;7764 = 2 // 0 to 3
 
 // Ui Quality
 UiQuality@0;42500;43096 = Auto // one of 1080P, 4K, Auto
 
 // World streaming quality option
-WorldStreamingQuality@0;6770;11445 = Low // one of Low, High
+WorldStreamingQuality@0;6770;11445 = High // one of Low, High
 
 // Strength for Contrast Adaptive Sharpening (CAS)
 AMDContrastAdaptiveSharpeningStrength@0;14317;40397 = 0.500000 // 0.000000 to 1.000000
 
 // Select AMD FidelityFX
-AMDFidelityFX@0;56444;48403 = FSR 3 // one of Off, CAS, FSR 1, FSR 3
+AMDFidelityFX@0;56444;48403 = CAS // one of Off, CAS, FSR 1, FSR 3
 
 // AMD FidelityFX Super Resolution quality
 AMDSuperResolutionQuality@0;27441;8284 = Ultra Quality // one of Maximum Performance, Balanced, Maximum Quality, Ultra Quality
 
 // AMD FidelityFX Super Resolution 2 & 3 quality
-AMDSuperResolution2Quality@0;27441;8284 = Maximum Quality // one of Ultra Performance, Maximum Performance, Balanced, Maximum Quality, Native Resolution
+AMDSuperResolution2Quality@0;27441;8284 = Balanced // one of Ultra Performance, Maximum Performance, Balanced, Maximum Quality, Native Resolution
 
 // Activate FSR 3 Frame Interpolation
 FSRFrameInterpolation@0;57752;48403 = true
@@ -308,16 +308,16 @@ NVIDIAImageScalingQuality@0;27441;34191 = Maximum Quality // one of Maximum Perf
 NVIDIAImageScalingSharpness@0;14317;19055 = 0.300000 // 0.000000 to 1.000000
 
 // Ambient lighting quality
-AmbientLightingQuality@0;20439;58629 = Medium // one of Off, Low, Medium, High, Ultra
+AmbientLightingQuality@0;20439;58629 = Off // one of Off, Low, Medium, High, Ultra
 
 // Graphics Quality Preset Level
 GraphicsQuality@0;9088;43096 = Balanced // one of Minimum, Basic, Balanced, Ultra, Extreme
 
 // Models quality level
-ModelQuality@0;15002;43096 = Low Quality // one of Low Quality, Medium Quality, High Quality
+ModelQuality@0;15002;43096 = High Quality // one of Low Quality, Medium Quality, High Quality
 
 // Particle quality level
-ParticleQuality@0;60198;58629 = low // one of very low, low, medium, high
+ParticleQuality@0;60198;58629 = medium // one of very low, low, medium, high
 
 // Shadow Quality Level
 ShadowQuality@0;3981;58629 = Low // one of Very_Low, Low, Medium, High, Very_High
@@ -326,16 +326,16 @@ ShadowQuality@0;3981;58629 = Low // one of Very_Low, Low, Medium, High, Very_Hig
 HDR@0;3781;43096 = Automatic // one of Off, On, Automatic
 
 // Enable persistent damage layer
-PersistentDamageLayer@0;57752;20945 = true
+PersistentDamageLayer@0;57752;20945 = false
 
 // Enable half resolution reflection probes
-ReflectionProbeHalfResolution@0;57752;48403 = true
+ReflectionProbeHalfResolution@0;57752;48403 = false
 
 // If true radial motion blur will be applied based on the player velocity.
 EnableVelocityBasedBlur@0;57752;20945 = true
 
 // Select the shader quality setting
-ShaderQuality@0;19450;7764 = Medium // one of Default, Medium, Low
+ShaderQuality@0;19450;7764 = Low // one of Default, Medium, Low
 
 // Catmull Clark subdivision level
 SubdivisionLevel@0;36080;58629 = 1 // 0 to 8
@@ -431,10 +431,10 @@ YawSpeed@0;13349;2099 = 140.000000 // 0.000000 to 280.000000
 ConfigCloudStorageEnabled@0;57752;20945 = true
 
 // DO NOT MODIFY. Normalized detected total CPU power, based on cpu type, count, and speed
-DetectedFrequencyGHz@0;21498;7764 = 22.206001 // -340282346638528859811704183484516925440.000000 to 340282346638528859811704183484516925440.000000
+DetectedFrequencyGHz@0;21498;7764 = 30.408003 // -340282346638528859811704183484516925440.000000 to 340282346638528859811704183484516925440.000000
 
 // DO NOT MODIFY. Physical memory detected in the system
-DetectedMemoryAmountMB@0;38495;7764 = 32658 // -2147483648 to 2147483647
+DetectedMemoryAmountMB@0;38495;7764 = 32695 // -2147483648 to 2147483647
 
 // Disable autodetect when hardware changes
 DisableHWChangeDetection@0;57752;48403 = false
@@ -452,7 +452,7 @@ LastUsedGPU@0;56178;35888 = AMD Radeon RX 6600
 RecommendedSet@0;57752;48403 = true
 
 // Thread count for handling the job queue
-RendererWorkerCount@0;51989;59387 = 6 // -1 to 16
+RendererWorkerCount@0;51989;59387 = 8 // -1 to 16
 
 // Set a target fraction of your PC's video memory to be used by the game. Affects Multiplayer gamemodes
 VideoMemoryScaleMP@0;59710;7707 = 0.900000 // 0.000000 to 2.000000
