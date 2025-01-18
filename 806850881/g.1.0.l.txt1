@@ -16,13 +16,13 @@ TextChat background opacity@0;54363;47620 = 0.200000 // 0.000000 to 1.000000
 // Audio
 
 // Adjusts microphone volume
-MicrophoneVolume@0;7333;21371 = 1.000000 // 0.000000 to 4.000000
+MicrophoneVolume@0;7333;21371 = 2.000000 // 0.000000 to 4.000000
 
 // Adjusts minimum volume threshold before activating your microphone
-MicThreshold@0;18951;22597 = 2072.444824 // 0.000000 to 1.000000
+MicThreshold@0;18951;22597 = 368.508942 // 0.000000 to 1.000000
 
 // Adjusts minimum volume threshold before activating your microphone
-MicThreshold@1;56218;22597 = 0.031623 // 0.000000 to 1.000000
+MicThreshold@1;56218;22597 = 0.005623 // 0.000000 to 1.000000
 
 // Audio mix
 AudioMixPreset@0;5555;35888 = 
@@ -40,7 +40,7 @@ EffectsVolume@0;54363;21371 = 1.000000 // 0.000000 to 1.000000
 HitMarkersVolume@0;54363;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Adjusts overall volume of the game
-Volume@0;54363;21371 = 0.700000 // 0.000000 to 1.000000
+Volume@0;54363;21371 = 0.400000 // 0.000000 to 1.000000
 
 // On for Mono Audio, Off for Stereo Audio
 MonoSound@0;57752;48403 = false
@@ -67,7 +67,7 @@ WarTracksVolume@0;54363;21371 = 1.000000 // 0.000000 to 1.000000
 VoiceChat@0;57752;20945 = true
 
 // Adjusts volume of other player voices in voice chat
-VoiceChatVolume@0;7333;21371 = 1.200000 // 0.000000 to 4.000000
+VoiceChatVolume@0;7333;21371 = 3.120000 // 0.000000 to 4.000000
 
 // On for Audio Wheel active
 AudioWheelActive@0;57752;20945 = true
@@ -96,7 +96,7 @@ Sprint Assist Delay Gamepad@1;23176;7764 = 0 // 0 to 12750
 // Display
 
 // Adjusts the brightness of the game
-Brightness@0;8382;7764 = 0.300000 // -0.500000 to 0.500000
+Brightness@0;8382;7764 = 0.250000 // -0.500000 to 0.500000
 
 // Target refresh rate
 TargetRefreshRate@0;48261;11445 = 120 Hz // one of 60 Hz, 120 Hz

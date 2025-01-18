@@ -68,7 +68,7 @@ VoicePushToTalk@0;57752;20945 = false
 VoiceVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Adjusts overall volume of the game
-Volume@0;14317;21371 = 0.700000 // 0.000000 to 1.000000
+Volume@0;14317;21371 = 0.400000 // 0.000000 to 1.000000
 
 // War Tracks Volume
 WarTracksVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
@@ -77,7 +77,7 @@ WarTracksVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 SoundInputDevice@0;2059;35888 = {0.0.1.00000000}.{fd9cf76a-39b8-4969-a0bd-c6c1644bfe16}
 
 // Speaker device requested by the user
-SoundOutputDevice@0;2059;35888 = {0.0.0.00000000}.{BC46A4FD-F2D8-4E74-85F7-0C70BF3313A2}
+SoundOutputDevice@0;2059;35888 = {0.0.0.00000000}.{c803eb55-03f8-4410-837a-44e11851238f}
 
 // Voice device requested by the user
 VoiceOutputDevice@0;2059;35888 = {0.0.0.00000000}.{BC46A4FD-F2D8-4E74-85F7-0C70BF3313A2}
@@ -138,7 +138,7 @@ WindowX@0;8975;53132 = -32768 // -32768 to 32767
 WindowY@0;8975;53132 = -32768 // -32768 to 32767
 
 // Percentage of window resolution that the 3D scene renders at. value set by the user. can be smaller than the actual.
-ResolutionMultiplier@0;64786;30730 = 85 // 0 to 200
+ResolutionMultiplier@0;64786;30730 = 90 // 0 to 200
 
 // Enable Nvidia low latency mode. Boost mode request maximum GPU clock frequency regardless of workload
 NvidiaReflex@0;33761;11445 = Enabled // one of Disabled, Enabled, Enabled + boost
@@ -212,7 +212,7 @@ AATechniquePreferred@0;64219;48403 = SMAA // one of SMAA, XeSS, FSR AA
 AbsoluteTargetResolution@0;64285;26972 = none // one of 540P, 640P, 720P, 900P, 1080P, 1440P, native, none
 
 // Show bullet impacts
-BulletImpacts@0;57752;20945 = true
+BulletImpacts@0;57752;20945 = false
 
 // Corpses culling threshold
 CorpsesCullingThreshold@0;62572;12490 = 0.750000 // 0.500000 to 1.000000
@@ -230,19 +230,19 @@ ScreenSpaceShadowQuality@0;42742;43096 = Off // one of Off, Low, High
 SSRQuality@0;58437;11445 = Off // one of Off, Low, High
 
 // Static sunshadow moment clipmap resolution
-StaticSunshadowClipmapResolution@0;21851;46253 = 1024 // 0 to 2147483647
+StaticSunshadowClipmapResolution@0;21851;46253 = 512 // 0 to 2147483647
 
 // Number of ST LOD to skip
 STLodSkip@0;52787;7764 = 0 // 0 to 5
 
 // Tessellation quality level
-Tessellation@0;27349;11445 = 2_All // one of 0_Off, 1_Near, 2_All
+Tessellation@0;27349;11445 = 0_Off // one of 0_Off, 1_Near, 2_All
 
 // Texture filtering quality level
-TextureFilter@0;63279;8284 = aniso 8x // one of aniso 2x, aniso 4x, aniso 8x, aniso 16x
+TextureFilter@0;63279;8284 = aniso 2x // one of aniso 2x, aniso 4x, aniso 8x, aniso 16x
 
 // Texture quality level, high to low ( higher number means lower resolution )
-TextureQuality@0;61129;7764 = 2 // 0 to 3
+TextureQuality@0;61129;7764 = 3 // 0 to 3
 
 // Ui Quality
 UiQuality@0;42500;43096 = Auto // one of 1080P, 4K, Auto
@@ -251,13 +251,13 @@ UiQuality@0;42500;43096 = Auto // one of 1080P, 4K, Auto
 WorldStreamingQuality@0;6770;11445 = High // one of Low, High
 
 // Strength for Contrast Adaptive Sharpening (CAS)
-AMDContrastAdaptiveSharpeningStrength@0;14317;40397 = 0.500000 // 0.000000 to 1.000000
+AMDContrastAdaptiveSharpeningStrength@0;14317;40397 = 0.700000 // 0.000000 to 1.000000
 
 // Select AMD FidelityFX
 AMDFidelityFX@0;56444;48403 = CAS // one of Off, CAS, FSR 1, FSR 3
 
 // AMD FidelityFX Super Resolution quality
-AMDSuperResolutionQuality@0;27441;8284 = Ultra Quality // one of Maximum Performance, Balanced, Maximum Quality, Ultra Quality
+AMDSuperResolutionQuality@0;27441;8284 = Maximum Quality // one of Maximum Performance, Balanced, Maximum Quality, Ultra Quality
 
 // AMD FidelityFX Super Resolution 2 & 3 quality
 AMDSuperResolution2Quality@0;27441;8284 = Balanced // one of Ultra Performance, Maximum Performance, Balanced, Maximum Quality, Native Resolution
@@ -314,13 +314,13 @@ AmbientLightingQuality@0;20439;58629 = Off // one of Off, Low, Medium, High, Ult
 GraphicsQuality@0;9088;43096 = Balanced // one of Minimum, Basic, Balanced, Ultra, Extreme
 
 // Models quality level
-ModelQuality@0;15002;43096 = High Quality // one of Low Quality, Medium Quality, High Quality
+ModelQuality@0;15002;43096 = Low Quality // one of Low Quality, Medium Quality, High Quality
 
 // Particle quality level
-ParticleQuality@0;60198;58629 = medium // one of very low, low, medium, high
+ParticleQuality@0;60198;58629 = very low // one of very low, low, medium, high
 
 // Shadow Quality Level
-ShadowQuality@0;3981;58629 = Low // one of Very_Low, Low, Medium, High, Very_High
+ShadowQuality@0;3981;58629 = Very_Low // one of Very_Low, Low, Medium, High, Very_High
 
 // Set HDR activation mode. Option only takes effect on HDR Display.
 HDR@0;3781;43096 = Automatic // one of Off, On, Automatic
@@ -329,13 +329,13 @@ HDR@0;3781;43096 = Automatic // one of Off, On, Automatic
 PersistentDamageLayer@0;57752;20945 = false
 
 // Enable half resolution reflection probes
-ReflectionProbeHalfResolution@0;57752;48403 = false
+ReflectionProbeHalfResolution@0;57752;48403 = true
 
 // If true radial motion blur will be applied based on the player velocity.
 EnableVelocityBasedBlur@0;57752;20945 = true
 
 // Select the shader quality setting
-ShaderQuality@0;19450;7764 = Low // one of Default, Medium, Low
+ShaderQuality@0;19450;7764 = Medium // one of Default, Medium, Low
 
 // Catmull Clark subdivision level
 SubdivisionLevel@0;36080;58629 = 1 // 0 to 8
